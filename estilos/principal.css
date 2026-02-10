@@ -1,0 +1,229 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'SuperWonder';
+  src: url(../fonts/SuperWonder.ttf) format('truetype');
+}
+
+:root {
+  /*Paleta de Cores Marrom*/
+  --cor1: #1d1103;
+  --cor2: #401903;
+  --cor3: #551e09;
+  --cor4: #593825;
+  --cor5: #73351f;
+  /*Paleta de Cores Verdes*/
+  --cor6: #0d2601;
+  --cor7: #0f381b;
+  --cor8: #1b4001;
+  --cor9: #467302;
+  --cor10: #33a645;
+  /*Paleta de Cores Amarelo*/
+  --cor11: #bf6b04;
+  --cor12: #f29f05;
+  --cor13: #f2b705;
+  --cor14: #f2be5c;
+  --cor15: #f2cba3;
+  /*Paleta de Cores Azuis*/
+  --cor16: #0a1d2b;
+  --cor17: #0a2b4d;
+  --cor18: #0a3b6b;
+  --cor19: #0a4b8a;
+  --cor20: #0a5bc9;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  background-image: url('../imagens/fundo.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-image: linear-gradient(to bottom, #362009, var(--cor1) 80%);
+  color: var(--cor15);
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  text-align: center;
+  font-variant: small-caps;
+}
+header p {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 10px;
+}
+
+nav {
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-bottom: -5px;
+}
+
+nav a {
+  color: var(--cor15);
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: var(--cor15);
+  color: var(--cor5);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+nav > ul > li {
+  list-style: none;
+}
+
+main {
+  background-color: #1d110336;
+}
+
+section {
+  background-color: white;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 0px 0px 10px 10px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
+
+section h2 {
+  color: var(--cor7);
+  font-family: 'SuperWonder', cursive;
+  font-weight: normal;
+  font-size: 2.2em;
+  text-align: center;
+  padding: 5px;
+  margin: 20px -20px;
+}
+
+section h3,
+h4 {
+  color: var(--cor7);
+  font-family: 'SuperWonder', cursive;
+  font-weight: normal;
+  font-size: 1.8em;
+  margin: 20px 0px;
+}
+
+section p {
+  text-align: justify;
+  font-size: 1.2em;
+  text-indent: 1em;
+  line-height: 1.3em;
+  margin: 20px 0px;
+}
+
+section ol {
+  background-color: var(--cor7);
+  color: white;
+  padding: 20px 20px 20px 30px;
+  border-radius: 10px;
+  columns: 2;
+}
+
+section ol > li {
+  list-style: none;
+  margin: 10px 0px;
+}
+
+section ol > li::before {
+  content: '✓ ';
+  color: white;
+}
+
+div#ods {
+  max-width: 900px;
+  margin: auto;
+}
+
+section > ul {
+  margin: 20px 0px;
+  padding: 30px;
+}
+
+section > ul > li {
+  color: var(--cor7);
+  font-weight: bold;
+  padding: 10px;
+}
+
+article {
+  background-color: #68f57dbb;
+  margin-top: 50px;
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-bottom: -20px;
+  padding: 20px 20px 50px 20px;
+  border-radius: 0px 0px 10px 10px;
+}
+
+article ul {
+  list-style: none;
+}
+
+article li {
+  background-color: var(--cor10);
+  padding: 15px;
+  margin: 10px 0px;
+  border-radius: 10px;
+  border: 2px solid var(--cor1);
+}
+
+article li::before {
+  content: '↪ ';
+  color: var(--cor10);
+}
+
+article li:hover {
+  background-color: var(--cor6);
+  color: white;
+  transition: 0.5s;
+}
+
+.palavra-chave {
+  font-weight: bold;
+  color: var(--cor5);
+}
+
+footer {
+  background-color: var(--cor1);
+  color: var(--cor15);
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+strong {
+  color: var(--cor10);
+}
+
+div.video {
+  background-color: var(--cor6);
+  padding: 50px;
+  margin: -20px;
+  padding-bottom: 53.5%;
+  position: relative;
+}
+
+div.video > iframe {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
