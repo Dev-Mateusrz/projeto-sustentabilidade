@@ -90,6 +90,9 @@ nav > ul > li {
 
 main {
   background-color: #1d110336;
+  min-width: 90vw;
+  max-width: 60vw;
+  margin: auto;
 }
 
 section {
@@ -125,15 +128,42 @@ section p {
   font-size: 1.2em;
   text-indent: 1em;
   line-height: 1.3em;
-  margin: 20px 0px;
+  margin: 30px 0px;
 }
 
-section ol {
-  background-color: var(--cor7);
-  color: white;
+section#container-ods {
+  background: rgb(255, 255, 255) url(../imagens/imagem_ods.png) center center no-repeat
+    fixed;
+  background-size: cover;
+  margin: 30px -20px;
+  text-align: center;
+  box-shadow: 0px 0px 0px;
+  border-radius: 0px;
+}
+
+section#container-ods > h4 {
+  color: var(--cor10);
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+section > div.ods {
+  display: inline-block;
+  background-color: #ffffff9d;
+  color: var(--cor7);
+  font-weight: bold;
+  min-height: 300px;
+  min-width: 40vw;
+  margin: 30px 0px;
   padding: 20px 20px 20px 30px;
   border-radius: 10px;
-  columns: 2;
+}
+
+section div#ajustes {
+  position: relative;
+  min-width: 40vw;
+
+  top: -32px;
 }
 
 section ol > li {
@@ -143,12 +173,7 @@ section ol > li {
 
 section ol > li::before {
   content: '✓ ';
-  color: white;
-}
-
-div#ods {
-  max-width: 900px;
-  margin: auto;
+  color: var(--cor7);
 }
 
 section > ul {
@@ -206,6 +231,7 @@ footer {
   text-align: center;
   padding: 20px;
   margin-top: 50px;
+  border-radius: 15px 15px 0px 0px;
 }
 
 strong {
@@ -213,7 +239,10 @@ strong {
 }
 
 div.video {
-  background-color: var(--cor6);
+  background: rgb(255, 255, 255) url(../imagens/imgaem_video.jpg) center center no-repeat
+    fixed;
+  background-size: cover;
+  /* background-color: var(--cor6); */
   padding: 50px;
   margin: -20px;
   padding-bottom: 53.5%;
