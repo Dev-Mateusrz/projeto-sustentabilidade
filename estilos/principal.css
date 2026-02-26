@@ -208,6 +208,7 @@ article li {
   margin: 10px 0px;
   border-radius: 10px;
   border: 2px solid var(--cor1);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.507);
 }
 
 article li::before {
