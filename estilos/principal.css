@@ -39,6 +39,7 @@
 
 body {
   background-image: url('../imagens/fundo.jpg');
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -58,13 +59,13 @@ header h1 {
 }
 header p {
   text-align: center;
-  font-size: 1.1em;
+  font-size: 2vh;
   margin-top: 10px;
 }
 
 nav {
   margin-top: 20px;
-  margin-left: 20px;
+  margin-left: -10px;
   margin-bottom: -5px;
 }
 
@@ -86,12 +87,12 @@ nav a:hover {
 
 nav > ul > li {
   list-style: none;
+  min-width: 370px;
 }
 
 main {
   background-color: #1d110336;
-  min-width: 90vw;
-  max-width: 60vw;
+
   margin: auto;
 }
 
@@ -139,6 +140,7 @@ section#container-ods {
   text-align: center;
   box-shadow: 0px 0px 0px;
   border-radius: 0px;
+  box-shadow: inset 1px 1px 10px 3px rgba(255, 255, 255, 0.692);
 }
 
 section#container-ods > h4 {
@@ -161,8 +163,7 @@ section > div.ods {
 
 section div#ajustes {
   position: relative;
-  min-width: 40vw;
-
+  max-width: 350px;
   top: -32px;
 }
 
@@ -177,7 +178,7 @@ section ol > li::before {
 }
 
 section > ul {
-  margin: 20px 0px;
+  margin: 10px 0px 60px;
   padding: 30px;
 }
 
@@ -189,7 +190,7 @@ section > ul > li {
 
 article {
   background-color: #68f57dbb;
-  margin-top: 50px;
+  margin-top: 0px;
   margin-left: -20px;
   margin-right: -20px;
   margin-bottom: -20px;
@@ -234,8 +235,24 @@ footer {
   border-radius: 15px 15px 0px 0px;
 }
 
+footer > p {
+  line-height: 1.3em;
+}
+
+footer a {
+  text-decoration: none;
+  padding: 3px 10px;
+}
+
+footer a:hover {
+  background-color: var(--cor4);
+  color: var(--cor5);
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
 strong {
-  color: var(--cor10);
+  color: white;
 }
 
 div.video {
@@ -247,6 +264,7 @@ div.video {
   margin: -20px;
   padding-bottom: 53.5%;
   position: relative;
+  box-shadow: inset 2px 2px 10px 3px rgba(255, 255, 255, 0.486);
 }
 
 div.video > iframe {
