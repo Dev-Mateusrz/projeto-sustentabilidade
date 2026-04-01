@@ -127,7 +127,7 @@ h4 {
 
 section p {
   text-align: justify;
-  font-size: 1.2em;
+  font-size: 1.5em;
   text-indent: 1em;
   line-height: 1.3em;
   margin: 30px 0px;
@@ -151,21 +151,16 @@ section#container-ods > h4 {
 }
 
 section > div.ods {
-  display: inline-block;
+  display: block;
   background-color: #ffffff9d;
   color: var(--cor7);
   font-weight: bold;
+  font-size: 1.3em;
   min-height: 300px;
-  min-width: 40vw;
-  margin: 30px 0px;
-  padding: 20px 20px 20px 30px;
+  max-width: 550px;
+  margin: 30px auto;
+  padding: 20px 20px 20px 40px;
   border-radius: 10px;
-}
-
-section div#ajustes {
-  position: relative;
-  max-width: 350px;
-  top: -32px;
 }
 
 section ol > li {
@@ -179,6 +174,7 @@ section ol > li::before {
 }
 
 section > ul {
+  font-size: 1.3em;
   margin: 10px 0px 60px;
   padding: 30px;
 }
@@ -200,6 +196,7 @@ article {
 }
 
 article ul {
+  font-size: 1.3em;
   list-style: none;
 }
 
@@ -258,7 +255,7 @@ strong {
 }
 
 div.video {
-  background: rgb(255, 255, 255) url(../imagens/imgaem_video.jpg) center center no-repeat
+  background: rgb(255, 255, 255) url(../imagens/imagem_video.jpg) center center no-repeat
     fixed;
   background-size: cover;
   /* background-color: var(--cor6); */
