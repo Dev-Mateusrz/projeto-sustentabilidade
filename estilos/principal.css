@@ -105,6 +105,16 @@ section {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
 }
 
+.titulos {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+div#sobre {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 section h2 {
   color: var(--cor7);
   font-family: 'SuperWonder', cursive;
@@ -138,6 +148,8 @@ section#container-ods {
     fixed;
   background-size: cover;
   margin: 30px -20px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   text-align: center;
   box-shadow: 0px 0px 0px;
   border-radius: 0px;
